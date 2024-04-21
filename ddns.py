@@ -4,6 +4,8 @@ import time
 import requests
 import datetime
 
+os.popen('title IPv4+IPv6动态域名解析工具')
+
 #【获取时间】
 def GetTime():
     Now = datetime.datetime.now()
