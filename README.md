@@ -89,7 +89,7 @@
 
 ◾ 域名是 ddns.example.cn，密钥是 3478teiu8rfj9ewut35ut34i0qwriegt90i，自动更新IPv4和IPv6记录
 
-```txt
+```cmd
 [ddns.example.cn, 3478teiu8rfj9ewut35ut34i0qwriegt90i, , , , 46]
 ```
 
@@ -105,7 +105,7 @@
 
 ◾ 域名4是 ddns4.example.cn，密钥是ef783y4thjcdijru89wieu89rr33r02o33b，仅自动更新IPv6记录，IPv6前缀是 fe80:ab2:1919:810::/60
 
-```makefile
+```cmd
 [ddns1.example.cn, 3478teiu8rfj9ewut35ut34i0qwriegt90i, , , , 46]
 [ddns2.example.cn, dcko490i39it90fi3it490rfo90rgoewrkg, , , , 4]
 [ddns3.example.cn, saeijdh78w4r2ir0iefi299rw0rg9ief90a, , , , 6]
@@ -119,7 +119,7 @@
 
 IPv4地址192.168.1.1，IPv6地址fe80::1a2b3c:2233:1145:aabb，更新IPv4和IPv6记录
 
-```txt
+```cmd
 [ddns.example.cn, 3478teiu8rfj9ewut35ut34i0qwriegt90i, 192.168.1.1, fe80::1a2b3c:2233:1145:aabb, , 46]
 ```
 
@@ -138,7 +138,7 @@ IPv4地址192.168.1.2，更新IPv4记录
 
 IPv6地址fe80::1a2b3c:2233:1145:aab2，IPv6前缀是 fe80:ab2:1919:810::/60，更新IPv6记录
 
-```txt
+```cmd
 [ddns1.example.cn, 3478teiu8rfj9ewut35ut34i0qwriegt90i, 192.168.1.1, fe80::1a2b3c:2233:1145:aab1, , 46]
 [ddns2.example.cn, dcko490i39it90fi3it490rfo90rgoewrkg, 192.168.1.2, , , 4]
 [ddns3.example.cn, saeijdh78w4r2ir0iefi299rw0rg9ief90a, , fe80::1a2b3c:2233:1145:aab2, fe80:ab2:1919:810::/60, 6]
