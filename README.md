@@ -89,7 +89,7 @@
 
 ◾ 域名是 ddns.example.cn，密钥是 3478teiu8rfj9ewut35ut34i0qwriegt90i，自动更新IPv4和IPv6记录
 
-```makefile
+```txt
 [ddns.example.cn, 3478teiu8rfj9ewut35ut34i0qwriegt90i, , , , 46]
 ```
 
@@ -119,7 +119,7 @@
 
 IPv4地址192.168.1.1，IPv6地址fe80::1a2b3c:2233:1145:aabb，更新IPv4和IPv6记录
 
-```makefile
+```txt
 [ddns.example.cn, 3478teiu8rfj9ewut35ut34i0qwriegt90i, 192.168.1.1, fe80::1a2b3c:2233:1145:aabb, , 46]
 ```
 
@@ -138,7 +138,7 @@ IPv4地址192.168.1.2，更新IPv4记录
 
 IPv6地址fe80::1a2b3c:2233:1145:aab2，IPv6前缀是 fe80:ab2:1919:810::/60，更新IPv6记录
 
-```makefile
+```txt
 [ddns1.example.cn, 3478teiu8rfj9ewut35ut34i0qwriegt90i, 192.168.1.1, fe80::1a2b3c:2233:1145:aab1, , 46]
 [ddns2.example.cn, dcko490i39it90fi3it490rfo90rgoewrkg, 192.168.1.2, , , 4]
 [ddns3.example.cn, saeijdh78w4r2ir0iefi299rw0rg9ief90a, , fe80::1a2b3c:2233:1145:aab2, fe80:ab2:1919:810::/60, 6]
@@ -152,6 +152,30 @@ IPv6地址fe80::1a2b3c:2233:1145:aab2，IPv6前缀是 fe80:ab2:1919:810::/60，�
 2：留空项的位置应当保留(如上面的例子)，不能删除
 
 3：在任意行最前端添加符号 "#" 则注释掉该行
+
+
+## 手动构建
+
+程序只使用了python自带的5个库：os, re, time, datetime, requests
+
+但如果你想手动构建的话得安装pyinstaller
+
+
+打开cmd，输入pyinstaller安装命令
+
+```cmd
+pip install pyinstaller
+```
+
+
+安装完成后用pyinstaller打包成exe
+
+来到你存放程序的目录，打开cmd，输入构建命令
+
+```cmd
+pyinstaller -F ddns.py
+```
+
 
 # 其它事项
 
